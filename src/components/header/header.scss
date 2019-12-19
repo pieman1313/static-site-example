@@ -1,0 +1,32 @@
+.header {
+  position: relative;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .MuiListItemText-root {
+    margin-top: 0;
+  }
+  .drawer-button {
+    right: 0;
+    position: absolute;
+    display: none;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .drawer-button {
+      display: block;
+    }
+
+    .nav {
+      display: none;
+    }
+  }
+}
+
+.header-nav-drawer {
+  .MuiDrawer-paper {
+    min-width: 70vw;
+  }
+}
