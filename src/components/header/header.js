@@ -12,17 +12,17 @@ import Nav from "../nav/nav"
 import DrawerNav from "../drawer-nav/drawer-nav"
 import "./header.scss"
 
-const Header = ({ siteTitle, links }) => {
+const Header = ({ title, navigation }) => {
   const [drawerOpen, setDrawerOpen] = useState(false)
   return (
     <AppBar color="primary" position="static" className="header">
       <Toolbar>
         <Link to="/">
-          <TypoGraphy variant="title" color="inherit">
-            {siteTitle}
+          <TypoGraphy variant="h6" color="inherit">
+            {title}
           </TypoGraphy>
         </Link>
-        <Nav items={links}></Nav>
+        <Nav items={navigation}></Nav>
         <IconButton
           color="inherit"
           aria-label="navigation menu"
@@ -37,7 +37,7 @@ const Header = ({ siteTitle, links }) => {
           onClose={() => setDrawerOpen(false)}
           className="header-nav-drawer"
         >
-          <DrawerNav items={links}></DrawerNav>
+          <DrawerNav items={navigation}></DrawerNav>
         </Drawer>
       </Toolbar>
     </AppBar>
@@ -45,11 +45,13 @@ const Header = ({ siteTitle, links }) => {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  title: PropTypes.string,
+  navigation: PropTypes.array,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  title: "",
+  navigation: [],
 }
 
 export default Header

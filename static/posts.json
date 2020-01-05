@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "My first post",
+    "content": "Lorem Ipsum"
+  },
+  {
+    "id": 2,
+    "title": "My second post",
+    "content": "Lorem Ipsum bla"
+  },
+  {
+    "id": 3,
+    "title": "My third post",
+    "content": "Lorem Ipsum something something"
+  }
+]

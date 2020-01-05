@@ -1,0 +1,5 @@
+[
+  { "to": "/", "label": "Posts", "id": 1 },
+  { "to": "/users", "label": "Users", "id": 2 },
+  { "to": "/admin", "label": "Admin", "id": 3 }
+]

@@ -13,7 +13,7 @@ function DrawerNav(props) {
         {props.items.map(item => (
           <ListItem>
             <Link to={item.to}>
-              <TypoGraphy color="inherit" variant="title">
+              <TypoGraphy color="inherit" variant="inherit">
                 {item.label}
               </TypoGraphy>
             </Link>

@@ -10,10 +10,10 @@ function Nav(props) {
     <List component="nav" className="nav">
       <ListItem component="ul">
         {props.items.map(item => (
-          <li>
+          <li key={item.id}>
             <ListItemText inset>
               <Link to={item.to}>
-                <TypoGraphy color="inherit" variant="title">
+                <TypoGraphy color="inherit" variant="inherit">
                   {item.label}
                 </TypoGraphy>
               </Link>
